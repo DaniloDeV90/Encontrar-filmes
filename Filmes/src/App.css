@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+  --title: #fffcf9;
+  --subtitle: #b3b3b3;
+  --bg-button: #e9e6e3;
+  --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+}
+
+
+.contem {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,p {
+  color:  var(--title);
+}
+body {
+  background: var(--background);
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+button {
+  background: var(--bg-button);
+  display: flex;
+  width: 190px;
+  gap: 5px;
+  border-radius: 5px;
+  height: 45px;
+  align-items: center;
+cursor: pointer;
+font-weight: bolder;
+}
+
+
+h3, #encontrar {
+  color: var(--subtitle);
+}
+
+
+.container {
+  flex-wrap: wrap;
+  padding: 20px;
+display: flex;
+gap: 30px;
+}
+
+.poster {
+
+grid-area: poster;
+}
+.titulos {
+width: 400px;
+
+  grid-area: titulos;
+}
+
+@media screen and (max-width:685px) {
+  .container {
+    justify-content: center;
+   
+  }
+  .titulos {
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
+
+ul{color: #ffffff;
+
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+
+}
+#genero {
+list-style: none;
+}
+#encontrar {
+  width: 260px;
+}
