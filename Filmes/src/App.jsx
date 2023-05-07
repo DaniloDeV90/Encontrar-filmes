@@ -15,11 +15,7 @@ let req;
   do {
     req = await api ()
   } while (!req.title)
- 
 
- 
-
- 
 setApi (req)  
 
 const req2 = await fetch (`https://image.tmdb.org/t/p/w200/${req.poster_path}`).then (resolve => resolve)
